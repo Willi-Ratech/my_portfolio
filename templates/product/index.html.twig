@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% dump %}
+{% block title %}Hello ProductController!{% endblock %}
+
+{% block body %}
+<div class="container m-6">
+  <div class="row g-2">
+  
+    
+{% for equipment in equipments %} 
+
+<div class="card" style="width: 18rem;">
+  <img src="{{equipment.image}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{equipment.name}}</h5>
+    
+
+      <!-- Bouton Détail -->
+        <a href="{{ path('equipment_show', {'id': equipment.id}) }}">
+          <button type="button" class="btn btn-primary">Voir les détails</button>
+      </a>
+  </div>
+</div>
+
+{% endfor %}
+
+
+
+
+
+{% endblock %}
+
+
+

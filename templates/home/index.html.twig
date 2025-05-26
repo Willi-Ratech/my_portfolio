@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Willi's portfolio{% endblock %}
+
+{% block body %}
+
+<section class="profile_container">
+
+    {# Bloc gauche :Texte #}
+    <div class="profile_text">
+        <h1>Bonjour,je suis<span class="highlight">Willi</span></h1>
+        <h2>Developpeur Web & Technicien support IT </h2>
+        <p>Je suis enthousiaste à l'idée de mettre en pratique mes compétences en développement web et désireux de rejoindre un environnement de travail dynamique comme le vôtre.”</p>
+        <button class="read_more">read more</button>
+    </div>
+
+    {# Bloc droite:Photo+Contact #}
+
+
+    <div class="contact_info">
+        <p>Email:<a href="mailto:metywilli.w@gmail.com">metywilli.w@gmail.com</a></p>
+        <p>Télephone:<a href="tel:+33787164603">+33787164603</a></p>
+    </div>        
+    <div class="photo_pro">
+        
+{# Fonction asset : Pour générer le chemin public vers mes images #}
+<img class="image_pro" src="{{asset('images/profildev.png')}}" alt="photo de profil">
+
+    </div>
+</section>
+
+    
+
+
+{% endblock %}

@@ -1,0 +1,290 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+
+
+
+
+body {
+    background-color: #FFF;
+
+    /* Recommanded everytime we start a new project */
+    min-height: 100vh;
+    
+}
+
+
+.navbar {
+    display: flex;
+    background-color:#051f34; 
+    justify-content: space-between;
+    padding: 20px 20px;
+    align-items: center;
+  min-width: 200vh;
+ 
+ 
+    
+
+}
+
+
+
+.nav_links{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color: white;
+    font-size: 18px;
+    margin-left: 0;
+    margin-right: 0;
+    
+
+    
+}
+
+a,.logo{
+    color: #ffcd38;
+    font-size: 18px;
+    text-decoration: none;
+    
+
+}
+a:hover{
+    color: #FFF;
+}
+
+
+.profile_container{
+    display: flex;
+    gap:200px;
+    align-items: center;
+    padding: 50px;
+}   
+
+.highlight{
+    color: #ffcd38;
+}
+
+.profile_text,h2{
+    max-width: 500px;
+    font-size: 36px;
+
+
+}
+p{
+    font-size: 18px;
+}
+
+.photo_pro{
+    display: block;
+    max-width: 100%;
+    
+}   
+
+
+.image_pro{
+    border-radius: 10px;
+}
+
+
+
+
+
+.contact_info{
+
+    position:absolute;
+    top:100px;
+    left:47.5%;
+    display: flex;
+    gap: 80px;
+    
+} 
+
+
+
+
+
+
+/* FORMULAIRE */
+/* Conteneur principal du formulaire */
+.form-wrapper {
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+    /* background: #ffffff; */
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color:#ffcd38;
+
+
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column; 
+    /* Assure un alignement vertical */
+    margin-top: 20px; /* Ajuste l'espace au besoin */
+}
+}
+
+/* Style du texte */
+.form-wrapper p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffcd38;
+}
+
+
+
+/* Champs du formulaire */
+.form-wrapper input, .form-wrapper textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+}
+
+/* Bouton de soumission */
+.submit-button {
+    background: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+.submit-button:hover {
+    background: #0056b3;
+}
+
+
+.read_more{
+    border-radius: 8%;
+    padding: 10px 20px; /* Espacement gauche et droite */
+    background-color: #051f34;
+    color: #ffcd38;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    cursor:pointer;
+}
+
+
+
+.container {
+    max-width: 80%; /* Définit une largeur maximale */
+    /* margin: 0 auto; Centre horizontalement */
+}
+
+
+
+/* STYLE DES BOUTON DES CADRES */
+.btn-primary {
+    background-color: #051f34; /* Couleur orangée */
+    border-color: #ffcd38; /* Bordure assortie */
+}
+
+.btn-primary:hover {
+    background-color: #ffcd38; /* Couleur plus foncée au survol */
+    border-color: #051f34;
+    color: #051f34;
+}
+
+
+
+
+/* STYLE DES CADRES  */
+
+.card {
+    background-color: #f8f9fa; /* Couleur de fond légèrement grise */
+    border-radius: 12px; /* Bords arrondis */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Ombre subtile */
+    padding: 16px; /* Espacement interne */
+    text-align: center; /* Centre le contenu */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation douce */
+}
+
+/* Effet au survol */
+.card:hover {
+    transform: translateY(-5px); /* Soulève légèrement la carte */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Ombre plus marquée */
+}
+
+/* Ajustement des images */
+.card-img-top {
+    border-radius: 12px 12px 0 0; /* Arrondi les coins du haut */
+    object-fit: cover; /* Ajuste l'image sans déformation */
+    max-height: 200px; /* Fixe une hauteur max */
+}
+
+/* Espacement entre les cartes */
+.row .card {
+    margin-bottom: 20px; /* Espacement entre chaque carte */
+}
+
+
+
+
+
+
+
+
+
+.container_details {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            max-width: 80%;
+            margin: auto;
+        }
+
+        .thumbnails {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .thumbnails img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+
+        .thumbnails img:hover {
+            border-color: #007bff;
+        }
+
+        .main-image {
+            flex-grow: 1;
+        }
+
+        .main-image img {
+            width: 400px;
+            height: auto;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .details {
+          
+            flex-grow: 2; /* Donne plus d'espace aux détails */
+           
+        }
+
+        .cardi {
+            background-color: #f8f9fa;
+            padding: 80px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+ 

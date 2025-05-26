@@ -1,0 +1,104 @@
+{% extends 'base.html.twig' %}
+{% block title %}Hello DetailController!{% endblock %}
+
+{% block body %}
+<!DOCTYPE html>
+    <title>Detail Equipment</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            max-width: 80%;
+            margin: auto;
+        }
+
+        .thumbnails {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .thumbnails img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+
+        .thumbnails img:hover {
+            border-color: #007bff;
+        }
+
+        .main-image {
+            flex-grow: 1;
+        }
+
+        .main-image img {
+            width: 400px;
+            height: auto;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .details {
+            flex-grow: 1;
+        }
+
+        .card {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Miniatures -->
+        <div class="thumbnails">
+            <img src="{{ equipment.image1 }}" onclick="changeImage('{{ equipment.image1 }}')" alt="Miniature 1">
+            <img src="{{ equipment.image2 }}" onclick="changeImage('{{ equipment.image2 }}')" alt="Miniature 2">
+            <img src="{{ equipment.image3 }}" onclick="changeImage('{{ equipment.image3 }}')" alt="Miniature 3">
+            <img src="{{ equipment.image4 }}" onclick="changeImage('{{ equipment.image4 }}')" alt="Miniature 4">
+        </div>
+
+        <!-- Image principale -->
+        <div class="main-image">
+            <img id="mainImg" src="{{ equipment.image }}" alt="Image principale">
+        </div>
+
+
+
+        <!-- Détails -->
+        <div class="details">
+            <div class="cardi">
+                <h5>{{ equipment.name }}</h5>
+                <p>Prix : {{ equipment.price }} €</p>
+                <p>Description : {{ equipment.description }}</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function changeImage(imageSrc) {
+            document.getElementById('mainImg').src = imageSrc;
+        }
+
+
+    </script>
+
+
+{% endblock %} 
+
+
+
+
+    
+
+
+
+    
