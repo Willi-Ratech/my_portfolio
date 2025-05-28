@@ -4,10 +4,18 @@
   <div class="logo">MonLogo</div>
   <ul class="nav_links">
     <li><a href="{{ path('app_home')}}">Accueil</a></li>
-    <li><a href="{{ path('app_home')}}">Services</a></li>
+    <li><a href="{{ path('app_service')}}">Services</a></li>
     <li><a href="{{ path('app_product')}}">Produits</a></li>
-    <li><a href="{{ path('app_home')}}">A propos</a></li>
-    <li><a href="{{ path('app_home')}}">Contact</a></li>
+    <li><a href="{{ path('app_about')}}">A propos</a></li>
+    <li><a href="{{ path('app_contact')}}">Contact</a></li>
+    <li><a href="{{ path('app_register')}}">S'enregistrer</a></li>
+    <li><a href="{{ path('app_login')}}">Se connecter</a></li>
+
+    {% if is_granted('ROLE_ADMIN') %}
+    <li><a href="{{ path('app_addproduct')}}">Ajouter</a></li>
+{% endif %}
+     
+     <li><a href="{{ path('app_admin')}}">Administrateur</a></li>
    
   </ul>
 </nav>

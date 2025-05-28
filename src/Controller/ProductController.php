@@ -8,7 +8,7 @@ use App\Repository\EquipmentRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Faker\Guesser\Name;
 use PhpParser\Node\Expr\Cast\String_;
-
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 // La classe Request est essentielle dans Symfony car elle permet d'accéder aux informations de la requête HTTP, notamment :
     // - Les paramètres GET et POST ($request->query->get('nom'), $request->request->get('password'))
 
@@ -39,7 +39,10 @@ final class ProductController extends AbstractController
 
 
 
-    #[Route('/product/addproduct', name: 'addproduct_app')]
+    #[Route('/product/addproduct', name: 'app_addproduct')]
+    // Pour que , que l'utilisateur admin peut acceder a cette page
+    #[IsGranted('ROLE_ADMIN')]
+    
     public function add(Request $request, EntityManagerInterface $entityManager): Response
 
     {
