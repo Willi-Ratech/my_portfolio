@@ -2,6 +2,24 @@
 
 <nav class="navbar">
   <div class="logo">MonLogo</div>
+  {# Bouton menu pour mobille #}
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  
+  
+  {# End  #}
+
+ <div class="contact-dropdown">
+    <div class="contact-icon" onclick="toggleContactMenu()">•••</div> <!-- Icône "menu trois point" -->
+    <ul class="contact-list">
+        <li>Email : <a href="mailto:metywilli.w@gmail.com">metywilli.w@gmail.com</a></li>
+        <li>Téléphone : <a href="tel:+33787164603">+33787164603</a></li>
+        <li>GitHub : <a href="https://github.com/ton-profil" target="_blank">Mon GitHub</a></li>
+    </ul>
+</div>
+
+
+
+
   <ul class="nav_links">
     <li><a href="{{ path('app_home')}}">Accueil</a></li>
     <li><a href="{{ path('app_service')}}">Services</a></li>
@@ -21,4 +39,18 @@
 </nav>
 
 </header>
+
+
+
+
+<script>
+  function toggleMenu() {
+    document.querySelector('.nav_links').classList.toggle('active');
+}
+
+
+function toggleContactMenu() {
+    document.querySelector('.contact-list').classList.toggle('active');
+}
+</script>
 

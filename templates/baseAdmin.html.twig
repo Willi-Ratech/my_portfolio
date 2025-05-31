@@ -1,7 +1,58 @@
 <!-- This is a reverse engineering of the "Hyperspace"
      design from HTML5 Up! https://html5up.net/hyperspace -->
 
-<main class="main">
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Admin Dashboard{% endblock %}</title>
+    <link rel="stylesheet" href="{{ asset('css/admin.css') }}">
+</head>
+<body>
+    <main class="main">
+        <aside class="sidebar">
+            <nav class="nav">
+                <ul>
+                    <li class="active"><a href="{{ path('app_admin') }}">Welcome</a></li>
+                    <li><a href="{{ path('app_home') }}">Home</a></li>
+                    <li><a href="{{ path('app_service') }}">Service</a></li>
+                    <li><a href="{{ path('app_product') }}">Products</a></li>
+                    <li><a href="{{ path('app_addproduct') }}">Add Products</a></li>
+                    <li><a href="{{ path('app_logout') }}">Logout</a></li> #}
+                </ul>
+            </nav>
+        </aside>
+
+        <section class="twitter">
+            <div class="container">
+                <a target="_blank" href="https://twitter.com/ReisnerShawn">
+                   <img class="social" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-128.png" alt="Twitter Icon">
+                </a>
+                <p>Follow me</p>
+                <p>on Twitter!</p>
+            </div>
+        </section>
+
+        <section class="content">
+            {% block content %}
+            <p>Contenu par défaut</p>
+            {% endblock %}
+        </section>
+    </main>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+     {# <main class="main">
   <aside class="sidebar">
     <nav class="nav">
       <ul>
@@ -24,7 +75,7 @@
       <p>on Twitter!</p>
     </div>
   </section>
-</main>
+</main> #}
 
 
 
