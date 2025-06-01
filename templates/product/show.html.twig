@@ -5,7 +5,7 @@
 <!DOCTYPE html>
     <title>Detail Equipment</title>
     <style>
-        .container {
+        .container-details {
             display: flex;
             align-items: flex-start;
             gap: 20px;
@@ -47,21 +47,22 @@
             flex-grow: 1;
         }
 
-        .card {
+        .card-details {
             background-color: #f8f9fa;
-            padding: 20px;
+            padding: 80px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
-@media screen and (max-width: 768px) {
-        }
 
-          .container {
+
+@media screen and (max-width: 768px) {
+
+    .container-details {
             display: block;
             align-items: flex-start;
             gap: 20px;
-            max-width: 80%;
+            max-width: 100%;
            
         
            
@@ -70,16 +71,18 @@
         .thumbnails {
             display: block;
             flex-direction: column;
-            gap: 10px;
+            gap: 20px;
         }
 
         .thumbnails img {
-            width: 54px;
-            height: 51px;
+            width: 60px;
+            height: 70px;
             object-fit: cover;
             cursor: pointer;
             border: 2px solid transparent;
             transition: border-color 0.3s ease;
+
+            margin-left: 10px;
           
         }
 
@@ -100,8 +103,10 @@
             border-radius: 8px;
             align-items: center;
             position: relative;
-           right: 20px;
+            left: 10px;
          
+         width: 90%;
+            margin: 0 auto;
      
         }
 
@@ -109,26 +114,27 @@
             flex-grow: 1;
         }
 
-        .card {
+        .card-details {
             background-color: #f8f9fa;
-            padding: 20px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            margin: 0 auto;
+            padding: 0;
+           text-align: center;
+           
+           
+        
         }
 
-
-
-
-
-
-
+ }
 
     </style>
 </head>
 <body>
     <br><br><br><br>
 
-    <div class="container">
+    <div class="container-details">
         <!-- Miniatures -->
         <div class="thumbnails">
             <img src="{{ equipment.image1 }}" onclick="changeImage('{{ equipment.image1 }}')" alt="Miniature 1">
@@ -146,7 +152,7 @@
 
         <!-- Détails -->
         <div class="details">
-            <div class="cardi">
+            <div class="card-details">
                 <h5>{{ equipment.name }}</h5>
                 <p>Prix : {{ equipment.price }} €</p>
                 <p>Description : {{ equipment.description }}</p>

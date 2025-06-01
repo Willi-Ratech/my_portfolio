@@ -1,28 +1,30 @@
 /* I/:GLOBAL PAGES'S STYLES */
 *{
-    margin:0;
-    padding: 0;
-}
-
-/* II/:BODY'S STYLES */
-body {
-    background-color: #FFF;
-    /* Recommanded everytime we start a new project */
-    min-height: 100vh;
-    
+margin:0;
+padding: 0;
 }
 
 
-@media screen and (max-width: 768px) {
-    body {
-    overflow: visible; /* Assure que la page ne disparaît pas */
-    position: relative; /* Empêche les bugs liés à position */
-}
-}
+                                /* BODY'S DEFAULT STYLES */
+                                body {
+                                    background-color: #FFF;
+                                    /* Recommanded everytime we start a new project */
+                                    min-height: 100vh;
+                                    
+                                }
 
 
+                                /* BODY'S STYLE  MOBILE SCREAN */
+                                @media screen and (max-width: 768px) {
+                                    body {
+                                    overflow: visible; /* Assure que la page ne disparaît pas */
+                                    position: relative; /* Empêche les bugs liés à position */
+                                }
+                                }
 
-/* III/:NAVBAR'S STYLES  */
+
+/* ///////////////////////////////////////////     NAV STYLE      ///////////////////////////////////////////////// */
+/* III/:NAVBAR'S STYLES  ,DEFAULT STYLES*/ 
 .navbar {
     display: flex;
     background-color:#051f34; 
@@ -39,118 +41,120 @@ body {
     color: white;
     font-size: 18px;
     margin-left: 0;
-    margin-right: 0;
-    
-
+    margin-right: 0;  
 }
 
 a,.logo{
     color: #ffcd38;
     font-size: 18px;
-    text-decoration: none;
-    
+    text-decoration: none;  
 }
+
 a:hover{
     color: #FFF;
     
 }
 
-/* Styles pour la version mobile */
-@media screen and (max-width: 768px) {
-.navbar {
-    display: flex;
-    flex-direction: column;
-    background-color:#051f34; 
-    /* justify-content: space-between; */
-    padding: 0% 20%;
-    /* align-items: center; */
-  min-width: 5vw;
-  position: fixed;
-  top: 0;
-  left:0;
-  right: 0;
-  transition: top 0.3s ease-in-out;
-  z-index: 1000;
+                                /* NAVBAR'S MOBILE STYLES */
+                                @media screen and (max-width: 768px) {
+                                .navbar {
+                                    display: flex;
+                                    flex-direction: column;
+                                    background-color:#051f34; 
+                                    /* justify-content: space-between; */
+                                    padding: 0% 20%;
+                                    /* align-items: center; */
+                                min-width: 5vw;
+                                position: fixed;
+                                top: 0;
+                                left:0;
+                                right: 0;
+                                transition: top 0.3s ease-in-out;
+                                z-index: 1000;
 
-}
-.nav_links {
-        display: none;
-        flex-direction: column;
-        position: absolute; 
-        top: 60px;
-        right: 0;
-        background-color: #051f34;
-        width: 60%;
-        padding: 20px;
-        color: white;
-        justify-content: center;
-        position: fixed;
-        
-    }
+                                }
+                                .nav_links {
+                                        display: none;
+                                        flex-direction: column;
+                                        position: absolute; 
+                                        top: 60px;
+                                        right: 0;
+                                        background-color: #051f34;
+                                        width: 60%;
+                                        padding: 20px;
+                                        color: white;
+                                        justify-content: center;
+                                        position: fixed;
+                                        
+                                    }
 
-.nav_links.active {
-        display: flex;
-        right: 0;
-    }
+                                .nav_links.active {
+                                        display: flex;
+                                        right: 0;
+                                    }
 
-.nav_links li{
-    margin: 15px 0;
-    text-align: center;
-
-
-}
+                                .nav_links li{
+                                    margin: 15px 0;
+                                    text-align: center;
+                                }
 
 
-.nav_links a{
-   text-decoration: none;
-    color: white;
-    font-size: 20px;
-    /* display: block; */
-    padding: 10px;
-    /* transition: background 0.3s ease-in-out, transform 0.2s; */
- /* transition: color 0.3s ease-in-out, background 0.3s ease-in-out; */
- 
-}
+                                .nav_links a{
+                                text-decoration: none;
+                                    color: white;
+                                    font-size: 20px;
+                                    /* display: block; */
+                                    padding: 10px;
+                                    /* transition: background 0.3s ease-in-out, transform 0.2s; */
+                                /* transition: color 0.3s ease-in-out, background 0.3s ease-in-out; */
+                                
+                                }
 
-li a:hover{
-  background: #ffcd38;
-  color: #fff;
+                                li a:hover{
+                                background: #ffcd38;
+                                color: #fff;
 
-}
+                                }
 
 
 
 
-    .menu-toggle {
-        display: block;
-        /* cursor: pointer; */
-        font-size: 24px;
-        color: white;
-        position: absolute;
-        right: 10px;
-        top: 6px;
-    }
+                                    .menu-toggle {
+                                        display: block;
+                                        /* cursor: pointer; */
+                                        font-size: 24px;
+                                        color: white;
+                                        position: absolute;
+                                        right: 10px;
+                                        top: 6px;
+                                    }
 
 
-.logo{
-    /* display: block; */
-    position: absolute;
-    color: #ffcd38;
-    font-size: 18px;
-    /* text-decoration: none; */
-    left: 10px;
-    top: 6px;
-    
-}
-/* a:hover{
-    color: #FFF;
-    
-} */
+                                .logo{
+                                    /* display: block; */
+                                    position: absolute;
+                                    color: #ffcd38;
+                                    font-size: 18px;
+                                    /* text-decoration: none; */
+                                    left: 10px;
+                                    top: 6px;
+                                    
+                                }
+                                /* a:hover{
+                                    color: #FFF;
+                                    
+                                } */
+                                
 
-}
+                                }
+
+/* END NAVBAR MOBILE STYLE */
+/* ///////////////////////////////////////////     END NAV STYLE      ///////////////////////////////////////////////// */
 
 
-/* PROFILE'S STYLES */
+/* ///////////////////////////////////////////    BLOC PROFIL STLE    ///////////////////////////////////////////////// */
+
+/* PROFILE'S DEFAULT STYLES */
 
 .profile_container{
     display: flex;
@@ -185,10 +189,6 @@ p{
     border-radius: 10px;
 }
 
-
-
-
-
 .contact_info{
 
     position:absolute;
@@ -201,99 +201,94 @@ p{
 } 
 
 
+                                /* Styles pour la version mobile */
+
+                                @media screen and (max-width: 768px) {
+
+                                .profile_container{
+                                    /* display:block; */
+                                    /* position: relative; */
+                                        display: flex;
+                                        flex-direction: column;
+                                        text-align: center;
+                                        padding: 80px;
+                                        background-image: url('../images/profildev.png'); /* Image en arrière-plan */
+                                        background-size: cover;
+                                        background-position: center;
+                                        background-repeat: no-repeat;
+                                    background-attachment: fixed;
+                                
+                                }   
+
+                                .profile_text,h2{
+                                    font-size: 36px;
+                                    background: rgba(0, 0, 0, 0.6); /* Fond noir transparent */
+                                        color: white;
+                                width: 100vw;
+                                /* padding: 0px; */
+                                text-align: center;
+
+                                top: 10px;
+                                
+                                }
+
+
+                                /* p{
+                                    font-size: 18px;
+
+                                } */
+
+                                .photo_pro{
+                                    display: none;/* Masque l'image normal sur mobile */ 
+                                    max-width: 100%;
+                                    
+                                }   
+
+
+                                .image_pro{
+                                    border-radius: 10px;
+                                    display: block;
+                                    max-width: 100%;
+                                    height: auto;
+                                    margin: auto;
+                                    top: 100px;
+                                
+                                }
+
+                                .contact_info{
+
+                                    position:absolute;
+                                    top:500px;
+                                    /* left:47.5%; */
+                                    display: none;
+                                    left: auto;
+
+                                    
+                                }  
+
+
+                                .contact-icon {
+                                    font-size: 40px;
+                                    cursor: pointer;
+                                    /* padding: 10px; */
+                                    border-radius: 5px;
+                                    /* background: white; */
+                                    color: white;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    position: relative;
+                                    top: -10px;
+
+                                }
+
+                                }
+
+                                /* END PROFILE'S MOBILE STYLES */
+/* ///////////////////////////////////////////     END BLOC PROFIL STYLE      ///////////////////////////////////////////////// */
 
 
 
-
-/* Styles pour la version mobile */
-
-@media screen and (max-width: 768px) {
-
-.profile_container{
-    /* display:block; */
-      /* position: relative; */
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding: 80px;
-        background-image: url('../images/profildev.png'); /* Image en arrière-plan */
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-     background-attachment: fixed;
-
-
-    
-}   
-
-.profile_text,h2{
-    font-size: 36px;
-    background: rgba(0, 0, 0, 0.6); /* Fond noir transparent */
-        color: white;
-  width: 100vw;
-  /* padding: 0px; */
-  text-align: center;
-
-  top: 10px;
- 
-
-
-}
-
-
-/* p{
-    font-size: 18px;
-
-} */
-
-.photo_pro{
-    display: none;/* Masque l'image normal sur mobile */ 
-    max-width: 100%;
-    
-}   
-
-
-.image_pro{
-    border-radius: 10px;
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: auto;
-    top: 100px;
-   
-}
-
-
-
-
-
-.contact_info{
-
-    position:absolute;
-    top:500px;
-    /* left:47.5%; */
-    display: none;
-    left: auto;
-
-      
-}  
-
-}
-
-.contact-icon {
-    font-size: 40px;
-    cursor: pointer;
-    /* padding: 10px; */
-    border-radius: 5px;
-    /* background: white; */
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    top: -10px;
-
-}
 
 .contact-list {
     display: none;
@@ -313,13 +308,8 @@ p{
 }
 
 
-
-
-
-
-
-
-/* FORMULAIRE */
+/* ///////////////////////////////////////////    STYLE DE FORMULAIRE D'AJOUT PRODUIT COMMENCE ICI    ///////////////////////////////////////////////// */
+/* FORMULAIRE ,DEFAULT STYLES*/
 /* Conteneur principal du formulaire */
 .form-wrapper {
     width: 60%;
@@ -330,8 +320,6 @@ p{
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     background-color:#ffcd38;
-
-
     display: flex;
     justify-content: center;
     /* align-items: center; */
@@ -341,13 +329,13 @@ p{
 }
 
 
+
 /* Style du texte */
 .form-wrapper p {
     font-size: 18px;
     font-weight: bold;
     color: #ffcd38;
 }
-
 
 
 /* Champs du formulaire */
@@ -377,18 +365,25 @@ p{
 }
 
 
-.read_more{
-    border-radius: 8%;
-    padding: 10px 20px; /* Espacement gauche et droite */
-    background-color: #051f34;
-    color: #ffcd38;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    cursor:pointer;
-}
+/* ///////////////////////////////////////////  END STYLE ADD FORM    ///////////////////////////////////////////////// */
 
 
+
+                                        /* /////////////////   BOUTON D'ACCUEIL READ MORE STYLE PAR DEFAUT      ////////////////////////// */
+                                        .read_more{
+                                            border-radius: 8%;
+                                            padding: 10px 20px; /* Espacement gauche et droite */
+                                            background-color: #051f34;
+                                            color: #ffcd38;
+                                            font-size: 16px;
+                                            font-weight: bold;
+                                            text-align: center;
+                                            cursor:pointer;
+                                        }
+
+                                        /* /////////////////   END BOUTON D'ACCUEIL READ MORE STYLE PAR DEFAUT      ////////////////////////// */
+
+/* ///////////////////   STYLE DE LA PAGE PRODUIT PAR DEFAUT COMMENCE ICI     //////////////////////// */
 
 .container {
     max-width: 80%; /* Définit une largeur maximale */
@@ -396,8 +391,7 @@ p{
 }
 
 
-
-/* STYLE DES BOUTON DES CADRES */
+/* STYLE DES BOUTON DES CADRES  PAGE PRODUIT */
 .btn-primary {
     background-color: #051f34; /* Couleur orangée */
     border-color: #ffcd38; /* Bordure assortie */
@@ -408,8 +402,6 @@ p{
     border-color: #051f34;
     color: #051f34;
 }
-
-
 
 
 /* STYLE DES CADRES  */
@@ -441,71 +433,17 @@ p{
     margin-bottom: 20px; /* Espacement entre chaque carte */
 }
 
+/* //////////////////////  END STYLE DE PAGE PRODUIT COMMENCE  ///////////////////////////////////////////////// */
 
 
 
 
-
-
-
-
-.container_details {
-            display: flex;
-            align-items: flex-start;
-            gap: 20px;
-            max-width: 80%;
-            margin: auto;
-        }
-
-        .thumbnails {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .thumbnails img {
-            width: 80px;
-            height: 80px;
-            object-fit: cover;
-            cursor: pointer;
-            border: 2px solid transparent;
-            transition: border-color 0.3s ease;
-        }
-
-        .thumbnails img:hover {
-            border-color: #007bff;
-        }
-
-        .main-image {
-            flex-grow: 1;
-        }
-
-        .main-image img {
-            width: 400px;
-            height: auto;
-            object-fit: cover;
-            border-radius: 8px;
-        }
-
-        .details {
-          
-            flex-grow: 2; /* Donne plus d'espace aux détails */
-           
-        }
-
-        .cardi {
-            background-color: #f8f9fa;
-            padding: 80px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
  
 
 
+/* //  STYLE DE FORMULAIRE DE REGISTRE COMMENCE ICI & DE LA MEME CLASS POUR FORMULAIRE DE LOGIN DONC MEME STYLE  ///////////////////////////////////////////////// */ 
 
-/* STYLE DE FORMULARE DE REGISTRE */
-
-        /* Centrer le formulaire */
+/* Centrer le formulaire */
 .form-container {
     max-width: 400px;
     margin: 50px auto;
@@ -518,8 +456,6 @@ p{
 .form-container input {
     width: 100%;
    
-   
-
 }
 
 /* Style des champs */
@@ -549,4 +485,5 @@ p{
     background: #0056b3;
 }
 
+/* ///////////////////////////////////////////    END REGISTER STYLE    ///////////////////////////////////////////////// */
         
