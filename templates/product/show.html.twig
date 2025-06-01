@@ -53,9 +53,80 @@
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
+
+@media screen and (max-width: 768px) {
+        }
+
+          .container {
+            display: block;
+            align-items: flex-start;
+            gap: 20px;
+            max-width: 80%;
+           
+        
+           
+        }
+
+        .thumbnails {
+            display: block;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .thumbnails img {
+            width: 54px;
+            height: 51px;
+            object-fit: cover;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: border-color 0.3s ease;
+          
+        }
+
+        .thumbnails img:hover {
+            border-color: #007bff;
+        }
+
+        .main-image {
+            flex-grow: 1;
+           
+        }
+
+        .main-image img {
+            width: 270px;
+            height: auto;
+         
+            object-fit: cover;
+            border-radius: 8px;
+            align-items: center;
+            position: relative;
+           right: 20px;
+         
+     
+        }
+
+        .details {
+            flex-grow: 1;
+        }
+
+        .card {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+
+
+
+
+
+
+
     </style>
 </head>
 <body>
+    <br><br><br><br>
 
     <div class="container">
         <!-- Miniatures -->

@@ -70,6 +70,7 @@ a:hover{
   left:0;
   right: 0;
   transition: top 0.3s ease-in-out;
+  z-index: 1000;
 
 }
 .nav_links {
@@ -112,7 +113,7 @@ a:hover{
 }
 
 li a:hover{
-  background: #1ABC9C;
+  background: #ffcd38;
   color: #fff;
 
 }
@@ -338,7 +339,7 @@ p{
     /* Assure un alignement vertical */
     margin-top: 20px; /* Ajuste l'espace au besoin */
 }
-}
+
 
 /* Style du texte */
 .form-wrapper p {
@@ -502,5 +503,50 @@ p{
 
 
 
+/* STYLE DE FORMULARE DE REGISTRE */
+
+        /* Centrer le formulaire */
+.form-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container input {
+    width: 100%;
+   
+   
+
+}
+
+/* Style des champs */
+.form-container input[type="email"],
+.form-container input[type="password"],
+.form-container input[type="checkbox"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style du bouton */
+.form-container .btn {
+    width: 100%;
+    padding: 10px;
+    background: #051f34;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-container .btn:hover {
+    background: #0056b3;
+}
 
         
